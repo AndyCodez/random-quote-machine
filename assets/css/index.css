@@ -12,7 +12,13 @@ h3{
 	border: 1px solid black;
 	padding: 30px;
 	width: 650px;
-	height: 330px;
+	height: 300px;
+}
+.quote{
+	margin: 30px;
+}
+.name{
+	margin-bottom: 30px;
 }
 .button{
 	background-color: #4CAF50;
@@ -23,6 +29,9 @@ h3{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 20px 40px;
     cursor: pointer;
+}
+.developer{
+	margin: 10px;
 }
