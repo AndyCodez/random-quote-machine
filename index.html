@@ -10,7 +10,10 @@
 		$(document).ready(function(){
 			$("#newQuote").click(function(){
 				$.getJSON("http://quotes.stormconsultancy.co.uk/random.json", function(json){
-					$(".quote").html(JSON.stringify(json));	
+					var html = "";
+
+					html += "\"" + json.quote + "\"";
+					$(".quote").html(html);	
 				});
 			});
 		});
@@ -20,8 +23,7 @@
 		<div class="quote-box">
 			<p class="quote">			
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis, est nec eleifend elementum, nulla."
-			</p>
-			<p class="name">
+			
 				- Andrew Henry
 			</p>	
 
