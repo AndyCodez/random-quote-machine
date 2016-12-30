@@ -2,27 +2,16 @@
 <html>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/index.js"></script>
 	<title>Haphazadier Quoter</title>
 	<link type="text/css" href="assets/css/index.css" rel="stylesheet">
 </head>
 <body>
-	<script>
-		$(document).ready(function(){
-			$("#newQuote").click(function(){
-				$.getJSON("http://quotes.stormconsultancy.co.uk/random.json", function(json){
-					var html = "";
-
-					html += "\"" + json.quote + "\"";
-					$(".quote").html(html);	
-				});
-			});
-		});
-	</script>
 	<h3>Haphazadier Quoter</h3>
 	<center>
 		<div class="quote-box">
 			<p class="quote">			
-				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis, est nec eleifend elementum, nulla."
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis, est nec eleifend elementum, nulla."<br><br>
 			
 				- Andrew Henry
 			</p>	
