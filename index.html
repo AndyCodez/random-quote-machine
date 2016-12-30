@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<title>Haphazadier Quoter</title>
+	<link type="text/css" href="assets/css/index.css" rel="stylesheet">
 </head>
 <body>
+	<script>
+		$(document).ready(function(){
+			$("#newQuote").click(function(){
+				$.getJSON("http://quotes.stormconsultancy.co.uk/random.json", function(json){
+					$(".quote").html(JSON.stringify(json));	
+				});
+			});
+		});
+	</script>
+	<h3>Haphazadier Quoter</h3>
+	<center>
+		<div class="quote-box">
+			<p class="quote">			
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis, est nec eleifend elementum, nulla."
+			</p>
+			<p class="name">
+				- Andrew Henry
+			</p>	
+
+			<div class="button-section">
+				<button class="button">Tweet</button>
+				<button class="button" id="newQuote">New Quote</button>
+			</div>
+			<div class="developer">
+				<p>Coded by <a href="http://github.com/andycodez" target="_blank">Andrew Owino</a>.</p>
+			</div>	
+		</div>	
+
+	</center>
 
 </body>
 </html>
