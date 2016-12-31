@@ -10,6 +10,8 @@ body{
 	which does not exist. So you have to go back a directory where 
 	the images folder is located.*/
 	background-image: url("../images/bg.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 h3{
 	margin: 30px; 

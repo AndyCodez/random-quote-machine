@@ -19,6 +19,5 @@ $(document).ready(function(){
 					$(".quote").html(html);	//display entire html as under the class "quote"
 					$(".tweet").html(tweetHtml);
 				});
-
 	});
 });
