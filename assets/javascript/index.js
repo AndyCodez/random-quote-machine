@@ -2,9 +2,9 @@ $(document).ready(function(){
 	$("#newQuote").click(function(){
 		var count = Math.floor(Math.random()*51); //randomize image id upto 50
 		imageUrl = "";
-		imageUrl += "url('https://unsplash.it/630/330?image=";
+		imageUrl += "url('https://unsplash.it/720/360?image=";
 		imageUrl += count + "')";
-		$("body").css("background-image", imageUrl); //use the random image id
+		$(".image-box").css("background-image", imageUrl); //use the random image id
 
 		// get the random quotes json api 
 		$.getJSON("http://quotes.stormconsultancy.co.uk/random.json", function(json){

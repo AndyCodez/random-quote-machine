@@ -9,20 +9,27 @@ body{
 	Without the ../ it is looking for an images folder inside your stylesheet folder 
 	which does not exist. So you have to go back a directory where 
 	the images folder is located.*/
-	background-image: url("../images/background.jpg"); 
-	background-repeat: no-repeat;
+	background-image: url("../images/bg.jpg"); 
 	background-size: cover;
 }
+.flex-container{
+	display: -webkit-flex;
+	display: flex;
+}
 h3{
+	color: white;
 	margin: 30px; 
 }
+p {
+	color: white;
+}
 .quote-box{
-	border: 1px solid black;
 	padding: 30px;
-	width: 650px;
+	width: 40%;
 	height: 300px;
 }
 .quote{
+
 	margin: 30px;
 }
 .button{
@@ -39,4 +46,14 @@ h3{
 }
 .developer{
 	margin: 10px;
+}
+.image-box {
+	width: 720px;
+	background-image: url("../images/background.jpg"); 
+	background-repeat: no-repeat;
+}
+.site-footer{
+	position: absolute;
+	bottom: 0;
+	left: 40%;
 }
