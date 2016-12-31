@@ -24,6 +24,10 @@ h3{
 p, h3 {
 	color: white;
 }
+.subtitle{
+	font-family: 'Alex Brush', cursive;
+	/*font-size: 16px;*/
+}
 .quote-box{
 	padding: 30px;
 	width: 40%;
@@ -34,7 +38,7 @@ p, h3 {
 	margin: 30px;
 }
 .button{
-	background-color: #4CAF50;
+	background-color: #00ACEE;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -58,4 +62,10 @@ p, h3 {
 	position: absolute;
 	bottom: 0;
 	left: 40%;
+}
+.site-footer a{ 
+	color: #FFF;
+}
+.site-footer a:hover{
+	color: #00ACEE;
 }
