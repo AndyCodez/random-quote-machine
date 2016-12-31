@@ -17,10 +17,11 @@ body{
 	display: flex;
 }
 h3{
-	color: white;
+	font-family: 'Fugaz One', cursive;
+	font-size: 22px;
 	margin: 30px; 
 }
-p {
+p, h3 {
 	color: white;
 }
 .quote-box{
@@ -29,7 +30,7 @@ p {
 	height: 300px;
 }
 .quote{
-
+	font-family: 'Tauri', sans-serif;
 	margin: 30px;
 }
 .button{
@@ -51,6 +52,7 @@ p {
 	width: 720px;
 	background-image: url("../images/background.jpg"); 
 	background-repeat: no-repeat;
+	background-size: 720px 360px;
 }
 .site-footer{
 	position: absolute;
