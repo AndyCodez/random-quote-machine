@@ -4,6 +4,12 @@
 }
 body{
 	text-align: center;
+	/* use ../ since External content in stylesheets 
+	are linked relatively to the path of the style sheet. 
+	Without the ../ it is looking for an images folder inside your stylesheet folder 
+	which does not exist. So you have to go back a directory where 
+	the images folder is located.*/
+	background-image: url("../images/bg.jpg"); 
 }
 h3{
 	margin: 30px; 
