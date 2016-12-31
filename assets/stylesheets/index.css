@@ -9,7 +9,7 @@ body{
 	Without the ../ it is looking for an images folder inside your stylesheet folder 
 	which does not exist. So you have to go back a directory where 
 	the images folder is located.*/
-	background-image: url("../images/bg.jpg"); 
+	background: url("../images/bg.jpg") #252C32; 
 	background-size: cover;
 }
 .flex-container{
