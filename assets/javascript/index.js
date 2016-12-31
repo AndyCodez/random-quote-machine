@@ -1,5 +1,12 @@
 $(document).ready(function(){
 	$("#newQuote").click(function(){
+		var count = Math.floor(Math.random()*51); //randomize image id upto 50
+		imageUrl = "";
+		imageUrl += "url('https://unsplash.it/630/330?image=";
+		imageUrl += count + "')";
+		$("body").css("background-image", imageUrl); //use the random image id
+
+		// get the random quotes json api 
 		$.getJSON("http://quotes.stormconsultancy.co.uk/random.json", function(json){
 			var html = "";
 			var tweetHtml = "";
@@ -12,6 +19,6 @@ $(document).ready(function(){
 					$(".quote").html(html);	//display entire html as under the class "quote"
 					$(".tweet").html(tweetHtml);
 				});
-		
+
 	});
 });
